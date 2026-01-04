@@ -33,18 +33,11 @@ int main(){
 
     unordered_map<string,int> marks;
     int m;
-
-    cout<<"Enter Philosophy marks: ";
-    cin>>m;
-    marks["Philosophy"]=m;
-
-    cout<<"Enter Biology marks: ";
-    cin>>m;
-    marks["Biology"]=m;
-
-    cout<<"Enter Mathematics marks: ";
-    cin>>m;
-    marks["Mathematics"]=m;
+    for(int i=0;i<favSub.size();i++){
+        cout<<"Enter " <<favSub[i]<< " marks: ";
+        cin>>m;
+        marks[favSub[i]]=m;
+    }
 
     unordered_set<string> skills;
     for(int i=0;i<3;i++){
